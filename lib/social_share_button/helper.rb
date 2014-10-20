@@ -6,7 +6,7 @@ module SocialShareButton
       rel = opts[:rel]
       html = []
       html << "<div class='social-share-button' data-title='#{h title}' data-img='#{opts[:image]}'"
-      html << "data-url='#{opts[:url]}' data-desc='#{opts[:desc]}' data-popup='#{opts[:popup]}' data-via='#{opts[:via]}'>"
+      html << "data-url='#{opts[:url]}' data-desc='#{opts[:desc]}' data-popup='#{opts[:popup]}' data-via='#{opts[:via]}'"
       html << "data-facebook_appid='#{opts[:facebook_appid]}' data-redirect_uri='#{opts[:redirect_uri]}' >"
       
       SocialShareButton.config.allow_sites.each do |name|
